@@ -1,3 +1,7 @@
+import {Routes, Route} from "react-router-dom"
+
 export const App = () => {
-  return <div className="welcome">Welcome to your first React Application!</div>
+  return <Routes>
+    <Route/>
+  </Routes>
 }
