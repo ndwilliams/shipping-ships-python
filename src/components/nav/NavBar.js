@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <ul>
       <li>
-        <Link>Ships</Link>
+        <Link to="/shippingships">Ships</Link>
       </li>
       <li>
         <Link>Haulers</Link>

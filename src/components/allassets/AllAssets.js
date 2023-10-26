@@ -37,25 +37,31 @@ export const AllAssetsList = () => {
       <div>
         <h2>Ships</h2>
         <article>
-          {allShips.map((shipObject) => {
-            return <div key={shipObject.id}>{shipObject.name}</div>;
-          })}
+          <ul>
+            {allShips.map((shipObject) => {
+              return <li key={shipObject.id}>{shipObject.name}</li>;
+            })}
+          </ul>
         </article>
       </div>
       <div>
         <h2>Docks</h2>
         <article>
-          {allDocks.map((dockObject) => {
-            return <div key={dockObject.id}>{dockObject.location}</div>;
-          })}
+          <ul>
+            {allDocks.map((dockObject) => {
+              return <li key={dockObject.id}>{dockObject.location}</li>;
+            })}
+          </ul>
         </article>
       </div>
       <div>
         <h2>Haulers</h2>
         <article>
-          {allHaulers.map((haulerObject) => {
-            return <div key={haulerObject.id}>{haulerObject.name}</div>;
-          })}
+          <ul>
+            {allHaulers.map((haulerObject) => {
+              return <li key={haulerObject.id}>{haulerObject.name}</li>;
+            })}
+          </ul>
         </article>
       </div>
     </div>
